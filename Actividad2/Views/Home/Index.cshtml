@@ -1,0 +1,25 @@
+﻿@model Actividad2.Models.ViewModels.MonedaViewModel
+@{
+    Layout = "Layout";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Actividad 2</title>
+    <link href="~/style.css" rel="stylesheet">
+</head>
+<body>
+    <form>
+        <div>
+            <h2>Ingresa la cantidad:</h2>
+            <input type="number" step="any" value="@Model.CantIngresada" name="CantIngresada" />
+        </div>
+        <div>
+            <input type="submit" name="moneda" value="USD" />
+            <input type="submit" name="moneda" value="MXN" />
+        </div>
+        <br />
+        <label>@Model.ConversionTotal</label>
+    </form>
+</body>
+</html>

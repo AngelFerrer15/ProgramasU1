@@ -1,0 +1,31 @@
+﻿@model Actividad_1.Models.ViewModels.IndexViewModel
+@{
+    Layout = "Layout";
+}
+
+
+
+<html>
+    <body>
+       
+        <label>Nombre de la materia:</label>
+        <label>@Model.NombreDeMateria</label>
+        <br />
+        <label>Semestre:</label>
+        <label>@Model.Semestre</label>
+        <br />
+        <label>Periodo:</label>
+    
+        <label>@Model.Periodo</label>
+        <br />
+        <label>Nombre de alumno:</label>
+
+        <label>@Model.NombreDeEs</label>
+        <br />
+        <div>
+            <a href="~/Home/MiPerfil">Ver Perfil</a>
+        </div>
+    
+    </body>
+</html>
+
